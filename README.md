@@ -5,7 +5,8 @@
 -------------------------
 # 正文
 
-![GitHub stars](https://img.shields.io/github/stars/LightDesignStudio/PowerPro?color=9cf) ![GitHub release](https://img.shields.io/github/release/ht0Ruial/Jiyu_udp_attack.svg)](https://github.com/ht0Ruial/Jiyu_udp_attack/releases/latest)
+![GitHub stars](https://img.shields.io/github/stars/LightDesignStudio/PowerPro?color=9cf)
+![Github Release](https://img.shields.io/github/downloads/LightDesignStudio/PowerPro/total?color=brightgreen&label=%E7%A8%B3%E5%AE%9A%E7%89%88%E6%9C%AC&style=flat-square)
 ![Github Activity](https://img.shields.io/github/commit-activity/y/LightDesignStudio/PowerPro?style=flat-square)
 
 + 因为极域的学生端没有对接收到的udp包做(=・ω・=)身份验证，导致了我们可以构造特定的数据包让学生端来执行，从而实现命令执行攻击机房内上线的任意学生端机器。
