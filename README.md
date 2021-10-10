@@ -3,6 +3,9 @@
 由于太**了，最近又重拾了Mythware的Crack，自学了一点Python，Fork了一份别人的Starter Kit，开始开发。
 
 -------------------------
+<center>正文</center>
+
+
 [![GitHub stars](https://img.shields.io/github/stars/ht0Ruial/Jiyu_udp_attack)](https://github.com/LightDesignStudio/Mythware-PowerPro) [![GitHub release](https://img.shields.io/github/release/ht0Ruial/Jiyu_udp_attack.svg)](https://github.com/ht0Ruial/Jiyu_udp_attack/releases/latest)
 
 + 因为极域的学生端没有对接收到的udp包做(=・ω・=)身份验证，导致了我们可以构造特定的数据包让学生端来执行，从而实现命令执行攻击机房内上线的任意学生端机器。
