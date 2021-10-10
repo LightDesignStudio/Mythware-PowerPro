@@ -1,9 +1,11 @@
 # PowerPro
 工具。更为强大。
 
+[下载](download.html)
+
 
 # 前言
-由于太**了，最近又重拾了Mythware的Crack，自学了一点Python，Fork了一份别人的Starter Kit，开始开发。
+由于太**了，最近又重拾了Mythware的Hack，自学了一点Python，Fork了一份别人的Starter Kit，开始开发。
 
 -------------------------
 # 正文
