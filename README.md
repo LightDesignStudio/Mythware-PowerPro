@@ -20,7 +20,7 @@
 usage:
 
     ------------------- Github Repositories -------------------
-            https://github.com/ht0Ruial/Jiyu_udp_attack
+            https://github.com/LightDesignStudio/PowerPro
 
        [-h] -ip IP [-p P] [-msg MSG] [-c C] [-l L] [-t T]
        [-e {r,s,g,nc,break,continue}]
