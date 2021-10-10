@@ -1,7 +1,7 @@
 # PowerPro
 工具。更为强大。
 
-[下载](download.html)
+[下载](download.md)
 
 
 # 前言
