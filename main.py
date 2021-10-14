@@ -28,7 +28,7 @@ header = """
                                 
     ------------------- Github Repositories -------------------
                         详细说明请看项目文档
-            https://github.com/ht0Ruial/Jiyu_udp_attack
+            https://power.upan.ink/PowerPro
 
 """
 parser = argparse.ArgumentParser(header)
