@@ -1,7 +1,5 @@
 # 使用方法：
 ```
-usage:
-
     ------------------- Github Repositories -------------------
             https://github.com/LightDesignStudio/PowerPro
 
